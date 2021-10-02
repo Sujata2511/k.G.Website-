@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Web site design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+<!-------------  Header  ------------>
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html"><img src="image/logo.png"></a> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+    </section>
+
+<!--    ---------About us content------- -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the oldest politechnic in the West Bengal</h1>
+                <p>
+                    K. G. Engineering Institute, established in 1922, is a Government polytechnic institute located in the city of Bishnupur, Bankura district, West Bengal, India. It is affiliated to the West Bengal State Council of Technical Education (WBSCTE), approved by All India Council For Technical Education (AICTE), and provides diploma-level technical education to its students. It is controlled by the Department of Technical Education, Training & Skill Development, Government of West Bengal. It is one of the oldest polytechnics in West Bengal and one of the oldest technical institutes in India.                </p>
+                <a href="https://www.kgei-bsp.in/index.php" class="index-btn red-btn">Explor Now</a>
+            </div>
+            <div class="about-col">
+                <img src="image/k.g.png">
+            </div>
+        </div>
+    </section>
+
+<!--    ----Footer-----  -->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <div class="icon">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <p>Made by Sujata Bera <i class="far fa-smile"></i> </p>
+    </div>
+</section>
+
+</body>
+
+
+<!-- ------------JS for Toggel Menue ------------- -->
+<script>
+    var navLink = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLink.style.right ="0";
+    }
+    function hideMenu()
+    {
+        navLink.style.right ="-200px";
+    }
+</script>
+</html>
